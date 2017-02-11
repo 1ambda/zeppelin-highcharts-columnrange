@@ -1,0 +1,9 @@
+{
+  "type" : "VISUALIZATION",
+  "name" : "zeppelin-highcharts-columnrange",
+  "version" : "local",
+  "description": "Column range chart using highcharts library",
+  "artifact" : "/Users/lambda/github/1ambda/zeppelin-highcharts-columnrange",
+  "icon": "<i class=\"fa fa-align-center\"></i>",
+  "license": "Highcharts (https://shop.highsoft.com/faq/licensing)"
+}
