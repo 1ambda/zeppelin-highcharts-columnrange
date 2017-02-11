@@ -44,8 +44,8 @@ export default class ColumnRangeChart extends Visualization {
         const { yAxisCategories, } = extractCategories(yAxisIndex, rows)
         const data = createDataStructure(xAxisIndex, yAxisIndex, yAxisCategories, rows)
 
-        const chartOption = createHighchartOption(xAxisName, yAxisName, yAxisCategories, data);
-        Highcharts.chart(this.targetEl[0].id, chartOption);
+        const chartOption = createHighchartOption(xAxisName, yAxisName, yAxisCategories, data)
+        Highcharts.chart(this.targetEl[0].id, chartOption)
     }
 
     getTransformation() {
@@ -62,14 +62,14 @@ export default class ColumnRangeChart extends Visualization {
  * See also: http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/columnrange/
  */
 export function extractCategories(yAxisIdx, rows) {
-    const yAxisCategories = {};
+    const yAxisCategories = {}
 
     for(let i = 0; i < rows.length; i++) {
-        const row = rows[i];
+        const row = rows[i]
 
         const yAxisCategory = row[yAxisIdx]
         if (!yAxisCategories[yAxisCategories]) {
-            yAxisCategories[yAxisCategory] = true;
+            yAxisCategories[yAxisCategory] = true
         }
     }
 
@@ -89,7 +89,7 @@ export function createDataStructure(xAxisIndex, yAxisIndex,
                                     yAxisCategories, rows) {
     const categorized = yAxisCategories.map(() => []);
     for (let i = 0; i < rows.length; i++) {
-        const row = rows[i];
+        const row = rows[i]
 
         // get category index
         const yAxisValue = row[yAxisIndex]

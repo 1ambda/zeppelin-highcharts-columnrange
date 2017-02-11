@@ -1,6 +1,6 @@
 {
   "name": "zeppelin-highcharts-columnrange",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Column Range Chart for Apache Zeppelin using highcharts.js",
   "main": "index.js",
   "scripts": {
